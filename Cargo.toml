@@ -2,6 +2,7 @@
 name = "rev_slice"
 version = "0.1.0"
 authors = ["Scott McMurray <scottmcm@users.noreply.github.com>"]
+description = "A newtype for operating on a reversed view of a slice."
 license = "MIT"
 
 [dependencies]
