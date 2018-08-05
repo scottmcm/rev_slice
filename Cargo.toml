@@ -1,0 +1,11 @@
+[package]
+name = "rev_slice"
+version = "0.1.0"
+authors = ["Scott McMurray <scottmcm@users.noreply.github.com>"]
+license = "MIT"
+
+[dependencies]
+
+[features]
+default = ["std"]
+std = []
