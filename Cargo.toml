@@ -3,6 +3,9 @@ name = "rev_slice"
 version = "0.1.0"
 authors = ["Scott McMurray <scottmcm@users.noreply.github.com>"]
 description = "A newtype for operating on a reversed view of a slice."
+repository = "https://github.com/scottmcm/rev_slice"
+keywords = ["reverse", "indexing"]
+categories = ["no-std", "rust-patterns"]
 license = "MIT"
 
 [dependencies]
