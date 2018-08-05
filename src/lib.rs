@@ -1,7 +1,5 @@
 #![cfg_attr(not(any(std, test)), no_std)]
 
-#![cfg_attr(docs_rs_workarounds, feature(repr_transparent))]
-
 //! Offers a reversed view into a slice.
 //!
 //! To use, import the `SliceExt` trait to get the `.rev()` and `.rev_mut`
@@ -66,7 +64,6 @@ impl<T> SliceExt for [T] {
 
 /// A DST newtype providing a reversed view of a slice.
 #[derive(Debug, PartialEq, Eq, PartialOrd, Ord)]
-#[repr(transparent)]
 pub struct RevSlice<T>([T]);
 
 impl<T> RevSlice<T> {
