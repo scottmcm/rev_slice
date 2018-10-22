@@ -64,6 +64,7 @@ impl<T> SliceExt for [T] {
 
 /// A DST newtype providing a reversed view of a slice.
 #[derive(Debug, PartialEq, Eq, PartialOrd, Ord)]
+#[repr(transparent)]
 pub struct RevSlice<T>([T]);
 
 impl<T> RevSlice<T> {
