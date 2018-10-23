@@ -1,8 +1,9 @@
 [package]
 name = "rev_slice"
-version = "0.1.4"
+version = "0.1.5"
 authors = ["Scott McMurray <scottmcm@users.noreply.github.com>"]
 description = "A newtype for operating on a reversed view of a slice."
+readme = "README.md"
 documentation = "https://docs.rs/rev_slice"
 repository = "https://github.com/scottmcm/rev_slice"
 keywords = ["reverse", "indexing"]
