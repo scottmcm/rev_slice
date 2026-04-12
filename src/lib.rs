@@ -122,7 +122,7 @@ impl<T> RevSlice<T> {
         Some((item, rest.rev()))
     }
 
-    pub fn split_first_mut(&mut self) -> Option<(&T, &RevSlice<T>)> {
+    pub fn split_first_mut(&mut self) -> Option<(&mut T, &mut RevSlice<T>)> {
         let (item, rest) = self.0.split_last_mut()?;
         Some((item, rest.rev_mut()))
     }
@@ -132,7 +132,7 @@ impl<T> RevSlice<T> {
         Some((item, rest.rev()))
     }
 
-    pub fn split_last_mut(&mut self) -> Option<(&T, &RevSlice<T>)> {
+    pub fn split_last_mut(&mut self) -> Option<(&mut T, &mut RevSlice<T>)> {
         let (item, rest) = self.0.split_first_mut()?;
         Some((item, rest.rev_mut()))
     }
