@@ -2,6 +2,7 @@
 name = "rev_slice"
 version = "0.2.0"
 authors = ["Scott McMurray <scottmcm@users.noreply.github.com>"]
+edition = "2021"
 description = "A newtype for operating on a reversed view of a slice."
 readme = "README.md"
 documentation = "https://docs.rs/rev_slice"

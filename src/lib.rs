@@ -188,12 +188,12 @@ impl<T> IndexMut<Range<usize>> for RevSlice<T> {
 
 impl<T> RevSlice<T> {
     /// `my_slice.rev().iter()` and `my_slice.iter().rev()` are equivalent.
-    pub fn iter(&self) -> iter::Rev<slice::Iter<T>> {
+    pub fn iter(&self) -> iter::Rev<slice::Iter<'_, T>> {
         self.0.iter().rev()
     }
 
     /// `my_slice.rev().iter_mut()` and `my_slice.iter_mut().rev()` are equivalent.
-    pub fn iter_mut(&mut self) -> iter::Rev<slice::IterMut<T>> {
+    pub fn iter_mut(&mut self) -> iter::Rev<slice::IterMut<'_, T>> {
         self.0.iter_mut().rev()
     }
 }
